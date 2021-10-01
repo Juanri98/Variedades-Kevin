@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
 :root{
-    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
-    --color-primary: #667eea;
-    --color-secondary: #764ba2;
+    --background: linear-gradient(135deg, #010102f3 0%, #56535898 100%);
+    --color-primary: rgb(0, 0, 0);
+    --color-secondary: #4f4c52;
     --botton-padding: 20px 40px;
 
 }
@@ -200,7 +200,7 @@ body{
 
 .productos__h{
     position: absolute;
-    background: #dc143c8c;
+    background: #1048b1d2;
     top: 0;
     left: 0;
     width: 100%;
@@ -227,7 +227,7 @@ body{
 /*Footer*/
 
 .footer{
-    background: var(--color-primary);
+    background-color:#0d84b3;
 }
 
 .footer__grid{
