@@ -200,7 +200,7 @@ body{
 
 .productos__h{
     position: absolute;
-    background: #1048b1d2;
+    background: #939baad2;
     top: 0;
     left: 0;
     width: 100%;
@@ -227,7 +227,7 @@ body{
 /*Footer*/
 
 .footer{
-    background-color:#0d84b3;
+    background-color:#8d979b;
 }
 
 .footer__grid{
