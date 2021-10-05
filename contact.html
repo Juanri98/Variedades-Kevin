@@ -7,14 +7,15 @@
     <title>Variedades Kevin</title>
     <link rel="stylesheet" href="../Variedades-Kevin/css/normalize.css">
     <link rel="stylesheet" href="../Variedades-Kevin/css/estilos.css">
+    <link rel="shortcut icon" href="assets/icon2.png">
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <nav class="nav">
                 <a href="#" class="nav__items nav__items--cta">Contáctanos</a>
-                <a href="#quienes_somos" class="nav__items">Quiénes somos</a>
-                <a href="#p" class="nav__items">Productos</a>
+                <a href="index.html#quienes_somos" class="nav__items">Quiénes somos</a>
+                <a href="index.html#p" class="nav__items">Productos</a>
             </nav>
 
             <section class="hero__container">
@@ -39,7 +40,7 @@
                 de nuestros productos contáctanos por este formulario y lo más pronto posibles nos comunicaremos 
                 contigo para resolver cualquier inquietud.</p>
             <a href="#" class="presentacion__cta">Contáctanos</a>
-            <h1>Formulario en Angular: </h1>
+            <h1>Formulario de Contacto: </h1>
             <form (ngSubmit)="onRegistro()">
             <div class="input-group">
                 <label for="nombre">
@@ -66,55 +67,23 @@
                 <label for="mensaje">
                     Mensaje: 
                 </label>
-                <input type="text" name="mensaje" id="mensaje" required [(ngModel)]="registro.mensaje">
                 <h1></h1>
-                <button type="submit">Registrar</button>
+                <textarea name="mensaje" rows="10" cols="40" onClick='mensaje.value=""' id="mensaje" required [(ngModel)]="registro.mensaje">Escribe aquí tus comentarios</textarea>
+                <h1></h1>
+                <button type="submit">Enviar</button>
             </div> 
             </form>
-        </section>
-
-        <a name="p"></a>
-        <section class="productos">
-            <div class="container">
-                <h2 class="subtitle">Productos</h2>
-                <div class="productos__grid">
-                    <article class="productos__item">
-                        <img src="assets/producto1.jpg" alt="notebooks" class="producto__img">
-                        <div class="productos__h">
-                            <h2 class="productos__title">Servicio de corresponsal bancario</h2>
-                            <i class="fas fa-money-check-alt"></i>
-                        </div>
-                    </article>
-
-                    <article class="productos__item">
-                        <img src="assets/producto2.jpg" alt="utensilios" class="producto__img">
-                        <div class="productos__h">
-                            <h2 class="productos__title">Anchetas o desayunos sorpresa</h2>
-                            <i class="fas fa-cookie-bite"></i>
-                        </div>
-                    </article>
-
-                    <article class="productos__item">
-                        <img src="assets/accesorios_oficina.jpg" alt="ofinica" class="producto__img">
-                        <div class="productos__h">
-                            <h2 class="productos__title">Accesorios de papelería u oficina</h2>
-                            <i class="fas fa-paperclip"></i>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container footer__grid">
             <nav class="nav nav--footer">
-                <a class="nav_items nav__items--footer" href="">Inicio</a>
-                <a class="nav_items nav__items--footer" href="#quienes_somos">Quiénes somos</a>
-                <a class="nav_items nav__items--footer" href="#m_v">Misión</a>
-                <a class="nav_items nav__items--footer" href="#m_v">Visión</a>
-                <a class="nav_items nav__items--footer" href="#p">Productos</a>
+                <a class="nav_items nav__items--footer" href="index.html">Inicio</a>
+                <a class="nav_items nav__items--footer" href="index.html#quienes_somos">Quiénes somos</a>
+                <a class="nav_items nav__items--footer" href="index.html#m_v">Misión</a>
+                <a class="nav_items nav__items--footer" href="index.html#m_v">Visión</a>
+                <a class="nav_items nav__items--footer" href="index.html#p">Productos</a>
             </nav>
 
             <section class="footer__contact">
