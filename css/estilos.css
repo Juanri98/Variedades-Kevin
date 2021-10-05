@@ -134,6 +134,7 @@ body{
 .presentacion__cta{
     display: inline-block;
     margin-top: 30px;
+    margin-bottom: 30px;
     background: var(--color-primary);
     color: #fff;
     text-decoration: none;
