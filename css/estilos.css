@@ -47,6 +47,7 @@ body{
     height: 70xp;
     align-items: center;
     font-weight: 700;
+    margin-top: 20px;
 }
 
 .nav--footer{
@@ -269,4 +270,107 @@ body{
 
 .fab.footer__icon{
     line-height: 60px;
+}
+
+/*Responsive Desing*/
+@media screen and (max-width: 800px) {
+    :root{
+        --botton-padding: 18px 40px;
+    }
+
+    .nav{
+        justify-content: space-around;
+    }
+    
+    .nav__items{
+        font-weight: 400;
+        border-bottom: 1px solid #fff;
+    }
+
+    .hero__texts{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .hero__title{
+        font-size: 2.5rem;
+    }
+
+    .hero__subtitles{
+        font-size: 1.5rem;
+    }
+
+    .presentacion__des{
+        width: 100%;
+    }
+
+    .about{
+        grid-template-columns: 1fr;
+    }
+
+    .about.container{
+        padding-top: 0px;
+    }
+
+    .about__imagen{
+        text-align: right;
+    }
+
+    .about__img--left{
+        text-align: center;
+    }
+
+    .about__img--rigth{
+        text-align: center;
+    }
+
+    .about__texts:last-child{
+        grid-row: 5/6;
+    }
+
+    .footer__grid{
+        grid-template-columns: 1fr;
+    }
+
+    .footer__contact{
+        grid-row: 1/2;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    :root{
+        --botton-padding: 18px 35px;
+    }
+
+    .nav{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+
+    .nav__items{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .hero__texts{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .presentacion__img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .about.container{
+        padding-top: 10px;
+    }
+
+    .productos__grid{
+        grid-template-areas: 
+        "notebooks" 
+        "escritura_dibujo" 
+        "accesorios_oficina";
+    }
 }
